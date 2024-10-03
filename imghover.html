@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            position: relative;
+        }
+        .notext{
+            width: 200px;
+            height: 250px;
+            background-color: yellow;
+        }
+        .text{
+            height: 100%;
+            background-color: yellowgreen;
+            color: brown;
+            width: 0;
+            transition: all 2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .notext:hover .text{
+            width: 100%;
+        }
+        .nt{
+            width: 200px;
+            height: 250px;
+            background-color: yellow;
+        }
+        .t{
+            height: 0;
+            background-color: yellowgreen;
+            color: brown;
+            width: 100%;
+            /* position: absolute; */
+            transition: all 2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .nt:hover .t{
+            width: 100%;
+            height: 100%;
+        }
+        .le{
+            width: 200px;
+            height: 250px;
+            background-color: yellow;
+            position: relative;
+        }
+        .ri{
+            right: 0;
+            width: 0;
+            background-color: yellowgreen;
+            color: brown;
+            height: 250px;
+            position: absolute;
+            transition: width 2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .le:hover .ri{
+            width: 100%;
+            position: absolute;
+        }
+        .up{
+            width: 200px;
+            height: 250px;
+            background-color: yellow;
+        }
+        .d{
+            bottom: 0;
+            height: 0;
+            background-color: yellowgreen;
+            color: brown;
+            width: 200px;
+            position: absolute;
+            transition: height 2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .up:hover .d{
+            height: 100%;
+            position: absolute;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover</title>
+</head>
+<body>
+    <div class="notext">
+        <div class="text">Left to Right</div>
+    </div><pre></pre>
+    <div class="nt">
+        <div class="t">Up to Down</div>
+    </div><pre></pre>
+    <div class="le">
+        <div class="ri">Right to Left</div>
+    </div><pre></pre>
+    <div class="up"></div>
+        <div class="d">Up to Down</div>
+    </div>
+</body>
+</html>

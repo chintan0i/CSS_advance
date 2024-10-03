@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            display: flex;
+            margin: 10px;
+        }
+        div{
+            background-color: red;
+            border-radius: 100%;
+            height: 80px;
+            width: 80px;
+            display: block;
+        }
+        .b1{
+            animation: lor 4s infinite;
+            
+        }
+        @keyframes lor{
+            0%{
+                transform: translateX(0px);
+            }
+            50%{
+                transform: translateX(1300px);
+            }
+            100%{
+                transform: translateX(0px);
+            }
+        }
+        .b2{
+            position: relative;
+            animation: rol 4s infinite;
+            
+        }
+        @keyframes rol{
+            0%{
+                transform: translateX(1300px);
+            }
+            50%{
+                transform: translateX(0px);
+            }
+            100%{
+                transform: translateX(1300px);
+            }
+        }
+        .b3{
+            animation: dia 4s infinite;
+            position: relative;
+        }
+        @keyframes dia{
+            0%{
+                transform: translate(1300px, 695px);
+            }
+            50%{
+                transform: translate(0px, 0px);
+            }
+            100%{
+                transform: translate(1300px, 695px);
+            }
+        }
+        .b4{
+            animation: rdia 4s infinite;
+            position: relative;
+        }
+        @keyframes rdia{
+            0%{
+                transform: translate(0px, 695px);
+            }
+            50%{
+                transform: translate(1200px, 0px);
+            }
+            100%{
+                transform: translate(0px, 695px);
+            }
+        }
+        .b5{
+            animation: cen 4s infinite;
+            position: relative;
+        }
+        @keyframes cen{
+            0%{
+                transform: translate(650px, 349px);
+            }
+            50%{
+                transform: translate(650px, 695px);
+            }
+            100%{
+                transform: translate(650px, 349px);
+            }
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Animation</title>
+</head>
+<body>
+    <div class="b1"></div>
+    <div class="b2"></div>
+    <div class="b3"></div>
+    <div class="b4"></div>
+    <div class="b5"></div>
+</body>
+</html>

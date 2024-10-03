@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .head{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: auto auto auto;
+        }
+        .tab{
+            border: solid;
+            width: 100px;
+            height: 100px;
+        }
+        .tab:nth-child(1), :nth-child(3), :nth-child(5){
+            background-color: lightskyblue;
+        }
+        .tab:nth-child(2), :nth-child(4), :nth-child(6){
+            background-color:darkgray;
+        }
+
+        @media(max-width:500px){
+            .head{
+                display: grid;
+                gap: 10px;
+                grid-template-columns: auto;
+            }
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Project</title>
+</head>
+<body>
+    <div class="head">
+        <div class="tab"></div>
+        <div class="tab"></div>
+        <div class="tab"></div>
+        <div class="tab"></div>
+        <div class="tab"></div>
+        <div class="tab"></div>
+    </div>
+</body>
+</html>

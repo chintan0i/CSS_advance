@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card{
+            height: 300px;
+            width: 250px;
+            perspective: 1000px;
+        }
+        .card-anim{
+            width: 100%;
+            height: 100%;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+        .card:hover .card-anim{
+            transform: rotateY(180deg);
+        }
+        .card-front,.card-back{
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .card-front{
+            background-color: steelblue;
+            color: white;
+        }
+        .card-back{
+            background-color: yellowgreen;
+            transform: rotateY(180deg);
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Flip</title>
+</head>
+<body>
+    <div class="card">
+        <div class="card-anim">
+            <div class="card-front">
+                <h2>Front Side of the Card</h2>
+                <p>This is the front side of the card</p>
+            </div>
+            <div class="card-back">
+                <h2>Back Side of the Card</h2>
+                <p>This is the back side of the Card</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
